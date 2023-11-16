@@ -4,15 +4,15 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 255,255,255;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
   }
 }
 
@@ -24,4 +24,28 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.hover-item-style:hover {
+  cursor: pointer;
+  background-color: #6366F1; /* Indigo */
+  color: #F9FAFB; /* White */
+  border: 2px solid #93C5FD; /* Light Blue */
+}
+
+.selected-item-style {
+  cursor: pointer;
+  background-color: #7C3AED; /* Violet */
+  color: #F9FAFB; /* White */
+  border: 2px solid #A78BFA; /* Light Violet */
+}
+
+.sidebar {
+  min-height: 100vh; /* Minimum height of 100% of the viewport height */
+  overflow-y: auto;  /* Enable scrolling if the content is taller than the viewport */
+}
+
+/* Assuming your layout is flex */
+.layout {
+  display: flex;
 }

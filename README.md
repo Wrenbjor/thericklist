@@ -1,3 +1,10 @@
+# The Rick List
+
+This is a sameple project built with NextJS and React. 
+
+please use NPM to install and run the project.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -5,18 +12,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+The Rick List will supply a list of all episodes provided by the Rick and Morty API. The list on the left is all the Episodes. Click an Episode to see the Characters in that episode. Click the same episode in the list to "Toggle" back to the main character list.
+
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
