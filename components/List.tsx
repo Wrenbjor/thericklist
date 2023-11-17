@@ -13,6 +13,7 @@ type ListProps = {
           <li 
           key={item.id} 
           onClick={() => onItemClick(item.id)}
+          role='link'
           className={`${item.id === selectedItemId ? 'selected-item-style' : ''} hover-item-style`}
         >
           {item.name}
