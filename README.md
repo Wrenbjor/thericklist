@@ -21,6 +21,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 The Rick List will supply a list of all episodes provided by the Rick and Morty API. The list on the left is all the Episodes. Click an Episode to see the Characters in that episode. Click the same episode in the list to "Toggle" back to the main character list.
 
+## To run unit tests
+
+```bash
+npm test
+```
+
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
